@@ -8,10 +8,14 @@ import {
   Link
 } from "react-router-dom";
 import {GlobalProvider, useGlobalContext} from "./context/store"
+import Nav from "./components/Nav"
 
 function App() {
   return (
+   
     <Router>
+     
+      
     <GlobalProvider>
     
     <Switch>
@@ -22,7 +26,9 @@ function App() {
     </Switch>
 
     </GlobalProvider>
+    
     </Router>
+   
     
   );
 }
