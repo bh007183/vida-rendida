@@ -1,0 +1,73 @@
+#topSection {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.topSectionBlock {
+  width: 50%;
+}
+.wwButton {
+  background-color: var(--Grain);
+  border-width: 3px;
+  border-style: solid;
+  border-color: var(--Oxblood);
+  width: 100px;
+  height: 40px;
+  border-radius: 5px;
+}
+h1 {
+  text-decoration: underline;
+  color: var(--Chalkboard);
+}
+
+.centerContainer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.firstText {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+#ministriesGridContainer {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+}
+.ministriesRow {
+  grid-column: 2/8;
+  width: 100%;
+}
+.ministryPar {
+  text-align: justify;
+}
+.left {
+  border-width: 1px;
+  border-style: solid;
+  border-color: var(--Oxblood);
+  width: 700px;
+
+  float: left;
+}
+.right {
+  border-width: 1px;
+  border-style: solid;
+  border-color: var(--Oxblood);
+  width: 700px;
+  float: right;
+}
+@media only screen and (max-width: 700px) {
+  .topSectionBlock {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 935px) {
+  .left {
+    width: 100%;
+  }
+  .right {
+    width: 100%;
+  }
+}
