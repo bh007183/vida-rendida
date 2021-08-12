@@ -108,15 +108,18 @@ export default function PersistentDrawerLeft() {
       >
         <Toolbar>
             <div id="logoContain">
+              
         <Typography id="logoText" variant="h4" noWrap>
+        <Link to="/" style={{textDecoration: "none", color: "white"}}>
             Vida Rendida
+            </Link>
           </Typography>
           </div>
           <div id="navLinksContain">
           <Hidden smDown  >
-              <Link className="navLinks">About Us</Link>
-              <Link className="navLinks">Get Involved</Link>
-              <Link className="navLinks">Contact</Link>
+              <Link to="/whoweare"className="navLinks">Who We Are</Link>
+              <Link to="/getinvolved"className="navLinks">Get Involved</Link>
+              <Link to="/contact"className="navLinks">Contact</Link>
               </Hidden>
           <Hidden mdUp  >
           
@@ -153,21 +156,21 @@ export default function PersistentDrawerLeft() {
         </div>
         <Divider />
         <List>
-           <Link>
+           <Link to="/whoweare">
             <ListItem button >
               <ListItemIcon> <InfoIcon /></ListItemIcon>
-              <ListItemText primary="About Us" />
+              <ListItemText primary="Who We Are" />
             </ListItem>
             </Link>
             <Divider />
-           <Link>
+           <Link to="/contact">
             <ListItem button >
               <ListItemIcon> <EmailIcon /></ListItemIcon>
               <ListItemText primary="Contact Us" />
             </ListItem>
             </Link>
             <Divider />
-           <Link>
+           <Link to="/getinvolved">
             <ListItem button >
               <ListItemIcon> <GroupWorkIcon /></ListItemIcon>
               <ListItemText primary="Get Involved" />
