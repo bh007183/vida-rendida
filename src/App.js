@@ -19,13 +19,15 @@ function App() {
             <Home />
           </Route>
           <Route exact path="/getinvolved">
-            <Contact />
+          <GetInvolved />
+           
           </Route>
           <Route exact path="/whoweare">
             <WhoWeAre />
           </Route>
           <Route exact path="/contact">
-            <GetInvolved />
+          <Contact />
+            
           </Route>
         </Switch>
       </GlobalProvider>

@@ -1,16 +1,22 @@
 import * as React from "react"
 const GlobalContext = React.createContext({
-    global: ""
+    Bool: false,
+    English: {
+
+    },
+    Spanish: {
+
+    }
 })
 
 function globalReducer(state, action){
+    console.log(state)
     console.log(action.type)
     console.log(action.payload)
     switch(action.type){
         
-        case "EVENT": {
-            return global = action.payload
-
+        case "BOOLEAN": {
+            return {...state, Bool: action.payload}
         }
         default:
             throw new Error("Unknown action type " + action.type)
@@ -18,7 +24,7 @@ function globalReducer(state, action){
 }
 
 function GlobalProvider({children}){
-    const [state, dispatch] = React.useReducer(globalReducer, {global: ""})
+    const [state, dispatch] = React.useReducer(globalReducer, {Bool: false, English: {}, Spanish: {}})
     const value = {state, dispatch}
 return <GlobalContext.Provider value={value}>{children}</GlobalContext.Provider>
 }

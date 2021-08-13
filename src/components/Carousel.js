@@ -9,23 +9,23 @@ export default function CarouselComponent() {
     return (
         <Carousel  showArrows={false} autoPlay infiniteLoop={true} showThumbs={false} showStatus={false} interval={5000}>
           
-        <div style={{height:"40vh", background: "purple"}}>
+        <div style={{height:"50vh", background: "purple"}}>
           
          
         </div>
-        <div style={{height:"40vh", background: "pink"}}>
+        <div style={{height:"50vh", background: "pink"}}>
           
          
         </div>
-        <div style={{height:"40vh", background: "blue"}}>
+        <div style={{height:"50vh", background: "blue"}}>
           
          
         </div>
-        <div style={{height:"40vh", background: "yellow"}}>
+        <div style={{height:"50vh", background: "yellow"}}>
           
          
         </div>
-        <div style={{height:"40vh", background: "orange"}}>
+        <div style={{height:"50vh", background: "orange"}}>
           
          
         </div>

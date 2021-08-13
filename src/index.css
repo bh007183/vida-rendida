@@ -15,6 +15,9 @@ body {
   background-color: var(--Grain) !important;
  
 }
+a:hover{
+  color: var(--Tan);
+}
 
 
 code {

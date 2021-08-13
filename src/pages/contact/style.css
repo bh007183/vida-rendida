@@ -1,0 +1,51 @@
+#contactContain {
+  background-image: url("http://placekitten.com/200/300");
+  width: 100vw;
+  height: 100vh;
+  background-size: cover;
+  position: relative;
+}
+#contactBox {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  min-height: 60vh;
+  background-color: rgba(128, 128, 128, 0.5);
+  backdrop-filter: blur(2px);
+  border-radius: 10px;
+}
+#contactH1 {
+  text-align: center;
+  text-decoration: none;
+  margin-bottom: 0%;
+  color: var(--Oxblood);
+}
+hr {
+  width: 50%;
+  border-color: var(--Oxblood);
+}
+
+/* a:hover {
+  color: var(--Tan);
+}
+svg:hover{
+    color: var(--Tan);
+
+} */
+#contactH2 {
+  text-align: center;
+  color: var(--Oxblood);
+  margin-bottom: 0;
+}
+.linkContain {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 3%;
+}
+#contactPara {
+  padding-left: 20px;
+  padding-right: 20px;
+}

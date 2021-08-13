@@ -20,7 +20,10 @@ import EmailIcon from '@material-ui/icons/Email';
 import GroupWorkIcon from '@material-ui/icons/GroupWork';
 import InfoIcon from '@material-ui/icons/Info';
 import { Hidden } from '@material-ui/core';
+import HomeIcon from '@material-ui/icons/Home';
 import {Link} from "react-router-dom";
+import Switch from "@material-ui/core/Switch"
+import {useGlobalContext, GlobalProvider} from "../../context/store"
 import "./style.css"
 
 const drawerWidth = 240;
@@ -85,9 +88,12 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 export default function PersistentDrawerLeft() {
+  const {state, dispatch} = useGlobalContext()
+  console.log(state)
   const classes = useStyles();
   const theme = useTheme();
   const [open, setOpen] = React.useState(false);
+ 
 
   const handleDrawerOpen = () => {
     setOpen(true);
@@ -96,6 +102,12 @@ export default function PersistentDrawerLeft() {
   const handleDrawerClose = () => {
     setOpen(false);
   };
+  const handleChange = (event) => {
+    
+    dispatch({type: "BOOLEAN", payload: event.target.checked})
+    
+
+  }
 
   return (
     <div className={classes.root}>
@@ -114,12 +126,15 @@ export default function PersistentDrawerLeft() {
             Vida Rendida
             </Link>
           </Typography>
+         
           </div>
           <div id="navLinksContain">
           <Hidden smDown  >
               <Link to="/whoweare"className="navLinks">Who We Are</Link>
               <Link to="/getinvolved"className="navLinks">Get Involved</Link>
               <Link to="/contact"className="navLinks">Contact</Link>
+              <Switch checked={state.Bool} onChange={handleChange}  />
+              {/* checked={language} */}
               </Hidden>
           <Hidden mdUp  >
           
@@ -142,7 +157,7 @@ export default function PersistentDrawerLeft() {
       </AppBar>
       <Drawer
         className={classes.drawer}
-        variant="persistent"
+        // variant="persistent"
         anchor="right"
         open={open}
         classes={{
@@ -156,23 +171,30 @@ export default function PersistentDrawerLeft() {
         </div>
         <Divider />
         <List>
-           <Link to="/whoweare">
+        <Link className="link" to="/">
             <ListItem button >
-              <ListItemIcon> <InfoIcon /></ListItemIcon>
+              <ListItemIcon> <HomeIcon className="icon" /></ListItemIcon>
+              <ListItemText primary="Home" />
+            </ListItem>
+            </Link>
+            <Divider />
+           <Link  className="link"to="/whoweare">
+            <ListItem button >
+              <ListItemIcon> <InfoIcon className="icon"/></ListItemIcon>
               <ListItemText primary="Who We Are" />
             </ListItem>
             </Link>
             <Divider />
-           <Link to="/contact">
+           <Link  className="link"to="/contact">
             <ListItem button >
-              <ListItemIcon> <EmailIcon /></ListItemIcon>
+              <ListItemIcon> <EmailIcon className="icon"/></ListItemIcon>
               <ListItemText primary="Contact Us" />
             </ListItem>
             </Link>
             <Divider />
-           <Link to="/getinvolved">
+           <Link  className="link"to="/getinvolved">
             <ListItem button >
-              <ListItemIcon> <GroupWorkIcon /></ListItemIcon>
+              <ListItemIcon> <GroupWorkIcon className="icon"/></ListItemIcon>
               <ListItemText primary="Get Involved" />
             </ListItem>
             </Link>
