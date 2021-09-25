@@ -23,7 +23,8 @@ import { Hidden } from '@material-ui/core';
 import HomeIcon from '@material-ui/icons/Home';
 import {Link} from "react-router-dom";
 import Switch from "@material-ui/core/Switch"
-import {useGlobalContext, GlobalProvider} from "../../context/store"
+import {useGlobalContext} from "../../context/store"
+import Container from '@material-ui/core/Container';
 import "./style.css"
 
 const drawerWidth = 240;
@@ -110,13 +111,14 @@ export default function PersistentDrawerLeft() {
   }
 
   return (
+    // <Container maxWidth="sm">
     <div className={classes.root}>
       <CssBaseline />
       <AppBar
-        position="fixed"
-        className={clsx(classes.appBar, {
-          [classes.appBarShift]: open,
-        })}
+        // position="fixed"
+        // className={clsx(classes.appBar, {
+        //   [classes.appBarShift]: open,
+        // })}
       >
         <Toolbar>
             <div id="logoContain">
@@ -205,5 +207,6 @@ export default function PersistentDrawerLeft() {
         
       </Drawer>
     </div>
+    // </Container>
   );
 }
