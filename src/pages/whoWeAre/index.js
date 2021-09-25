@@ -10,6 +10,9 @@ export default function WhoWeAre() {
 
     return (
         <div>
+            <div id="famPic">
+
+            </div>
             
         </div>
     )
