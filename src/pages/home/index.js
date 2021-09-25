@@ -18,14 +18,7 @@ export default function Home() {
             </div>
             <div className="firstText">
               <p>
-                Hello? I've had a bit of a tumble. They just toss us away like
-                yesterday's jam. Yeah, you do know how a button works don't you?
-                Uh... okay, well, the button on the side, is it glowing? We
-                don't need no education. Yes you do. You've just used a double
-                negative. I'll put this over here, with the rest of the fire.I
-                am a man, he's a man, we're men! Ok, tell me how your feeling. I
-                feel delicate... and annoyed, and... I think I'm ugly. Hello,
-                IT. Have you tried forcing an unexpected reboot?
+              {data.whatwedo}
               </p>
             </div>
 
