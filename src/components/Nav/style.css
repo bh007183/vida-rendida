@@ -29,7 +29,9 @@
 }
 .MuiAppBar-root{
    
-    background-color: var(--Oxblood) !important;
+   
+        background-color: var(--Oxblood) !important;
+    
 }
 
 .icon{
@@ -56,6 +58,6 @@
     
 }
 .MuiDrawer-paper{
-    
+    background-color: var(--Oxblood) !important;
     backdrop-filter: blur(3px);
 }

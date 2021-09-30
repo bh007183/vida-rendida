@@ -10,7 +10,9 @@ export default function WhoWeAre() {
   return (
     <div>
       <div id="whoWeAreHeader">
-        <img id="famPic"></img>
+       
+        <img id="famPic" style={{display: "block"}}></img>
+        
         <div id="introText">
           <h2>Our Vision</h2>
           <p>{data.vision}</p>
