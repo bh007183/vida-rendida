@@ -30,14 +30,39 @@ export default function CarouselComponent() {
             <h1>Surrendered Life Ministries</h1>
             <p
               style={{ fontSize: "18px" }}
-            >{`Spreading the gospel of our Lord Jesus through out Coasta Rica, our goal is ${data.vision}`}</p>
+            >{`Spreading the gospel of our Lord Jesus through out Costa Rica, our goal is ${data.vision}`}</p>
             <div style={{ display: "flex", justifyContent: "center" }}>
               <button id="firstSlideSMButton">Learn More</button>
             </div>
           </div>
         </div>
       </div>
-      <div className="carousel-screens" id="secondSlide"></div>
+      <div className="carousel-screens" id="secondSlide">
+      <div id="firstSlideContentContain">
+          <div id="firstSlideButtonContain">
+            <button id="firstSlideButton">Learn More</button>
+          </div>
+
+          <div id="firstSlideText">
+            <h1>What We Do</h1>
+            <p
+              style={{ fontSize: "18px" }}
+            >{`Evangelism, Preach in churches, Encourage the church to boldly live for Christ, children’s ministry, youth ministry, pastoral/ leadership training, humanitarian, building projects, restoration of those in addictions, men’s & women’s ministry, worship music project, slums, homeless outreach, take bibles to those without the word and travel to share with indigenous groups. `}</p>
+            <div style={{ display: "flex", justifyContent: "center" }}>
+              <button id="firstSlideSMButton">Learn More</button>
+            </div>
+          </div>
+        </div>
+        <div id="firstBack">
+
+        </div>
+        <div id="secondBack">
+
+        </div>
+        <div id="thirdBack">
+
+        </div>
+      </div>
     </Carousel>
   );
 }

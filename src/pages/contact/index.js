@@ -12,9 +12,7 @@ export default function Contact() {
              <h1 id="contactH1">Contact Us</h1>
              <hr></hr>
              <p id="contactPara">
-                Hello? I've had a bit of a tumble. They just toss us away like
-                yesterday's jam. Yeah, you do know how a button works don't you?
-                Uh... okay, well, the button on the side, is it glowing?
+                Questions? Need to get in touch? Send us an email!
 
              </p>
              <h2 id="contactH2">Email</h2>
@@ -22,10 +20,10 @@ export default function Contact() {
              
                
             <div className="linkContain">
-            <EmailIcon/>
+            <EmailIcon style={{color: "#C09F80"}}/>
             </div>
             <div className="linkContain">
-            <a href="mailto:benedictfamilyministries@gmail.com">benedictfamilyministries@gmail.com</a>
+            <a style={{color: "#C09F80"}} href="mailto:vidarendida@gmail.com">vidarendida@gmail.com</a>
             </div>
             
             </div>

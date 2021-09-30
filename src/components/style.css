@@ -103,14 +103,47 @@
 
 /* Second Slide */
 #secondSlide{
+    position: relative;
+    display: flex;
+    height: 100%;
+    width: 100%;
+}
+#secondBack{
+    width: 33.3%;
+    height: 100%;
     background: linear-gradient(
         to top,
-        rgba(0,0,0, 0.8),
+        rgba(0,0,0, 0.9),
         rgba(0,0,0, 0.0),
-        rgba(255, 255, 255, 0.8)
-      ),url(../images/costa-rica-carry.jpeg),url(../images/costa-rica-worship.jpeg);
+        rgba(0,0,0, 0.9)
+      ),url(../images/costa-rica-carry.jpeg);
     /* background: url(../images/plant.jpg); */
     background-repeat: no-repeat;
     background-size: cover;
-    position: relative;
+}
+#firstBack{
+    width: 33.3%;
+    height: 100%;
+    background: linear-gradient(
+        to top,
+        rgba(0,0,0, 0.9),
+        rgba(0,0,0, 0.5),
+        rgba(0,0,0, 0.9)
+      ),url(../images/costa-rica-worship.jpeg);
+    /* background: url(../images/plant.jpg); */
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#thirdBack{
+    width: 33.3%;
+    height: 100%;
+    background: linear-gradient(
+        to top,
+        rgba(0,0,0, 0.9),
+        rgba(0,0,0, 0.0),
+        rgba(0,0,0, 0.9)
+      ),url(../images/costa-rica-serve.jpeg);
+    /* background: url(../images/plant.jpg); */
+    background-repeat: no-repeat;
+    background-size: cover;
 }
