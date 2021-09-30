@@ -46,7 +46,7 @@ function GlobalProvider({children}){
         building: "",
         childrensministry: "",
         homevisits: "",
-        vision: "To humbly serve as the Lord allows us each day to come along side local churches, go into the communities to meet the greatest needs and ultimately to share the gospel of Jesus Christ! "
+        vision: "to humbly serve as the Lord allows us each day. To come along side local churches and to go into the communities. To meet the greatest needs and ultimately to share the gospel of Jesus Christ! "
     }, Spanish: {}})
     const value = {state, dispatch}
 return <GlobalContext.Provider value={value}>{children}</GlobalContext.Provider>

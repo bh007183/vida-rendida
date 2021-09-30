@@ -5,3 +5,97 @@
     
     
 }
+.carousel-screens{
+    min-height: 91vh;
+    
+}
+#firstSlide{
+    background: linear-gradient(
+        to top,
+        rgba(0,0,0, 0.8),
+        rgba(0,0,0, 0.0),
+        rgba(255, 255, 255, 0.8)
+      ),url(../images/plant.jpg);
+    /* background: url(../images/plant.jpg); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+#costaRicaHeader{
+    display: flex;
+    justify-content: center;
+   
+    width: 100%;
+   
+    padding-top: 1vw;
+   
+}
+
+#costaRicaHeader h1{
+    color: black;
+    text-decoration: none;
+    
+}
+#firstSlideButton{
+    background: none;
+    width: 80px;
+    height: 40px;
+    border: 2px solid white;
+    color: white;
+
+}
+#firstSlideSMButton{
+    display: none;
+    background: none;
+    width: 80px;
+    height: 40px;
+    border: 2px solid white;
+    color: white;
+    
+
+}
+#firstSlideContentContain{
+    min-width: 80%;
+    min-height: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  
+  /* background-color: rgba(26, 26, 26, 0.8); */
+  color: white;
+  /* border-radius: 10px; */
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-around ;
+}
+#firstSlideContentContain h1{
+    
+  color: white;
+  text-decoration: none;
+}
+#firstSlideText{
+    width: 70%;
+    background-color: rgba(26, 26, 26, 0.8);
+    border-radius: 10px;
+    padding: 80px 40px 80px 40px;
+}
+@media only screen and (max-width: 1271px){
+    #firstSlideButtonContain{
+        display: none;
+    }
+    #firstSlideSMButton{
+        display: block;
+    }
+}
+@media only screen and (max-width: 565px){
+    #firstSlideContentContain{
+        width: 100%;
+    }
+    #firstSlideText{
+        width: 90%;
+        padding: 0px
+    }
+    
+}

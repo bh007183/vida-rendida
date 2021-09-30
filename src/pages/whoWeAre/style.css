@@ -1,5 +1,29 @@
 #famPic{
-    width: 900px;
-    height: 50%;
-    background: url("../../images/Central.jpeg");
+    height: 100%;
+    content:url("../../images/Family.jpeg")
+    /* background: url("../../images/Family.jpeg"); */
+}
+#whoWeAreHeader{
+    width: 100%;
+    height: 400px;
+    background-color: var(--Tan);
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+#introText{
+    width: 50%;
+    text-align: center;
+    margin: 0 auto;
+    
+}
+#blockContain{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.block{
+    text-align: center;
+    width: 80%;
+   
 }

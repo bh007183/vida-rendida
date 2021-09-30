@@ -132,8 +132,8 @@ export default function PersistentDrawerLeft() {
           </div>
           <div id="navLinksContain">
           <Hidden smDown  >
-              <Link to="/whoweare"className="navLinks">Who We Are</Link>
-              <Link to="/getinvolved"className="navLinks">Get Involved</Link>
+              <Link to="/costa-rica-missions"className="navLinks">Who We Are</Link>
+              <Link to="/costa-rica-mission-trips"className="navLinks">Get Involved</Link>
               <Link to="/contact"className="navLinks">Contact</Link>
               <Switch checked={state.Bool} onChange={handleChange}  />
               {/* checked={language} */}
