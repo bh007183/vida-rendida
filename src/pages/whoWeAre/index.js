@@ -1,5 +1,7 @@
 import React from 'react'
 import "./style.css"
+import famPic from "../../images/Family.jpeg"
+
 import { GlobalProvider, useGlobalContext } from "../../context/store";
 
 export default function WhoWeAre() {
@@ -10,9 +12,9 @@ export default function WhoWeAre() {
 
     return (
         <div>
-            <div id="famPic">
+            <img stc={famPic} style={{width:"500px", height:"500px"}}id="famPic" >
 
-            </div>
+            </img>
             
         </div>
     )

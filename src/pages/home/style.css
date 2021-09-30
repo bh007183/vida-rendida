@@ -40,34 +40,9 @@ h1 {
   grid-column: 2/8;
   width: 100%;
 }
-.ministryPar {
-  text-align: justify;
-}
-.left {
-  border-width: 1px;
-  border-style: solid;
-  border-color: var(--Oxblood);
-  width: 700px;
 
-  float: left;
-}
-.right {
-  border-width: 1px;
-  border-style: solid;
-  border-color: var(--Oxblood);
-  width: 700px;
-  float: right;
-}
 @media only screen and (max-width: 700px) {
   .topSectionBlock {
-    width: 100%;
-  }
-}
-@media only screen and (max-width: 935px) {
-  .left {
-    width: 100%;
-  }
-  .right {
     width: 100%;
   }
 }
