@@ -135,7 +135,12 @@ export default function PersistentDrawerLeft() {
               <Link to="/costa-rica-missions"className="navLinks">Who We Are</Link>
               <Link to="/costa-rica-mission-trips"className="navLinks">Get Involved</Link>
               <Link to="/contact"className="navLinks">Contact</Link>
+
+              🇺🇸
               <Switch checked={state.Bool} onChange={handleChange}  />
+              🇨🇷
+              
+
               {/* checked={language} */}
               </Hidden>
           <Hidden mdUp  >
@@ -180,7 +185,7 @@ export default function PersistentDrawerLeft() {
             </ListItem>
             </Link>
             <Divider />
-           <Link  className="link"to="/whoweare">
+           <Link  className="link"to="/costa-rica-missions">
             <ListItem button >
               <ListItemIcon> <InfoIcon className="icon"/></ListItemIcon>
               <ListItemText primary="Who We Are" />
@@ -194,7 +199,7 @@ export default function PersistentDrawerLeft() {
             </ListItem>
             </Link>
             <Divider />
-           <Link  className="link"to="/getinvolved">
+           <Link  className="link"to="/costa-rica-mission-trips">
             <ListItem button >
               <ListItemIcon> <GroupWorkIcon className="icon"/></ListItemIcon>
               <ListItemText primary="Get Involved" />

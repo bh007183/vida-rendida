@@ -3,18 +3,28 @@ import CarouselComponent from "../../components/Carousel";
 import { Hidden } from "@material-ui/core";
 import "./style.css";
 import {useGlobalContext} from "../../context/store"
+import {Link} from "react-router-dom"
 
 export default function Home() {
-  const data = useGlobalContext().state.English
-  console.log(data)
+  let data;
+  const english = useGlobalContext().state.English
+  const spanish = useGlobalContext().state.Spanish
+  const bool = useGlobalContext().state.Bool
+  if(bool){
+    data = spanish
+  }else{
+    data = english
+  }
+
+  
   return (
-    <>
+    <div id="mainContain">
       <CarouselComponent />
       <main>
         <section id="topSection">
           <div className="topSectionBlock">
             <div className="centerContainer">
-              <h1>What We Do</h1>
+              <h1>{data.whatWeDo}</h1>
             </div>
             <div className="firstText">
               <p>
@@ -23,13 +33,15 @@ export default function Home() {
             </div>
 
             <div className="centerContainer">
-              <button className="wwButton">What We DO</button>
+            <Link to="/costa-rica-mission-trips">
+              <button style={{cursor: "pointer"}} className="wwButton">{data.whatWeDo}</button>
+              </Link>
             </div>
           </div>
 
           <div className="topSectionBlock">
             <div className="centerContainer">
-              <h1>Who We Are</h1>
+              <h1>{data.whoWeAre}</h1>
             </div>
             <div className="firstText">
               <p>
@@ -37,7 +49,9 @@ export default function Home() {
               </p>
             </div>
             <div className="centerContainer">
-              <button className="wwButton">Who We Are</button>
+              <Link to="/costa-rica-missions">
+              <button style={{cursor: "pointer"}}className="wwButton">{data.whoWeAre}</button>
+              </Link>
             </div>
           </div>
         </section>
@@ -51,6 +65,6 @@ export default function Home() {
            
         </section>
       </main>
-    </>
+    </div>
   );
 }

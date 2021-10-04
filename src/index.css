@@ -4,6 +4,9 @@
   --Oxblood: #76323f;
   --Tan: #C09F80;
 }
+.MuiContainer-root{
+  padding: 0px !important
+}
 
 body {
   margin: 0;
@@ -12,7 +15,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: var(--Grain) !important;
+  background-color: white !important;
  
 }
 a:hover{

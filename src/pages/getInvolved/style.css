@@ -1,0 +1,17 @@
+.MuiCard-root{
+    width: 300px;
+    margin: 10px;
+}
+#cardFlexContain{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+#getInvolvedContain{
+    background-color: var(--Grain);
+  }
+@media only screen and (max-width: 648px){
+    .MuiCard-root{
+        width: 100%;
+    }
+}

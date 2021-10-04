@@ -1,8 +1,17 @@
 import React from 'react'
 import "./style.css"
 import EmailIcon from '@material-ui/icons/Email';
-
+import {useGlobalContext} from "../../context/store"
 export default function Contact() {
+    let data;
+    const english = useGlobalContext().state.English
+    const spanish = useGlobalContext().state.Spanish
+    const bool = useGlobalContext().state.Bool
+    if(bool){
+      data = spanish
+    }else{
+      data = english
+    }
     return (
         <div id="contactContain">
             <div id="contactBox">
