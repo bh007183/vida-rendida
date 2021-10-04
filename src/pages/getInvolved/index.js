@@ -27,6 +27,12 @@ export default function GetInvolved() {
   }
   return (
     <div id="getInvolvedContain">
+       <h1 style={{ textAlign: "center", margin: "0px", padding: "20px" }} >Get Involved</h1>
+      <div style={{display: "flex", justifyContent: "center"}}>
+       
+        <div style={{ width: "80%"}}><p>There are a couple of ways you can get involved! If you want to help directly in Costa Rica, we welcome local or international teams, send us an <a href="mailto:vidarendida@gmail.com">Email</a> and we will discuss oportunities. You can also contribute through prayer! We apreciate any intercession on our behalf! Last but not least, you can make a monetary contribution <a href="https://christcentercashmere.churchcenter.com/giving/to/costa-rica-benedicts" target="_blank">Here</a>.</p></div>
+        
+      </div>
       <h1 style={{ textAlign: "center", margin: "0px", padding: "20px" }}>{data.costaRicaOutreach}</h1>
       <div id="cardFlexContain">
         <Card >
@@ -136,15 +142,17 @@ export default function GetInvolved() {
             </Typography>
           </CardContent>
         </Card>
+        <Card >
+          <CardContent> 
+            <Typography gutterBottom variant="h5" component="div">
+              {data.other}
+            </Typography>
+            <Typography variant="body2" color="text.secondary">
+            {data.otherText}
+            </Typography>
+          </CardContent>
+        </Card>
       </div>
-      STREET EVANGELISM
-      {/* HUMANITARIAN AID- Clothing/groceries to those in great poverty. (Visiting homes in low income communities or slums or on the streets)
-Construction projects (building churches or repairing homes. */}
-      {/* Children’s ministries (Sunday school classes) (outreaches to children in communities using activities) */}
-      Women’s or men’s ministry Rehabilitation of those in addictions
-      (partnership with misión rescate CR) then discipleship and follow-up.
-      Action sports outreach Ministry to indigenous groups. Worship music
-      project Bringing Bibles to communities without access to the word
     </div>
   );
 }

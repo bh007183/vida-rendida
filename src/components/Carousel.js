@@ -6,6 +6,7 @@ import {Link} from "react-router-dom"
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { useGlobalContext } from "../context/store";
+
 export default function CarouselComponent() {
   let data;
   const english = useGlobalContext().state.English
@@ -32,7 +33,7 @@ export default function CarouselComponent() {
         <div id="firstSlideContentContain">
           <div id="firstSlideButtonContain">
           <Link  className="link"to="/costa-rica-missions">
-            <button style={{cursor: "pointer"}} id="firstSlideButton">{data.learnMoreButton}</button>
+            <button style={{cursor: "pointer", marginBottom: "20px"}} id="firstSlideButton">{data.learnMoreButton}</button>
             </Link>
           </div>
 
@@ -43,7 +44,7 @@ export default function CarouselComponent() {
             >{data.vision}</p>
             <div style={{ display: "flex", justifyContent: "center" }}>
             <Link  className="link"to="/costa-rica-missions">
-            <button style={{cursor: "pointer"}} id="firstSlideSMButton">{data.learnMoreButton}</button>
+            <button style={{cursor: "pointer", marginBottom: "20px"}} id="firstSlideSMButton">{data.learnMoreButton}</button>
             </Link>
             </div>
           </div>
@@ -53,7 +54,7 @@ export default function CarouselComponent() {
       <div id="firstSlideContentContain">
           <div id="firstSlideButtonContain">
           <Link  className="link"to="/costa-rica-mission-trips">
-            <button style={{cursor: "pointer"}} id="firstSlideButton">{data.learnMoreButton}</button>
+            <button style={{cursor: "pointer", marginBottom: "20px"}}  id="firstSlideButton">{data.learnMoreButton}</button>
             </Link>
           </div>
 
@@ -64,7 +65,7 @@ export default function CarouselComponent() {
             >{data.whatwedo}</p>
             <div style={{ display: "flex", justifyContent: "center" }}>
             <Link  className="link"to="/costa-rica-mission-trips">
-              <button style={{cursor: "pointer"}} id="firstSlideSMButton">{data.learnMoreButton}</button>
+              <button style={{cursor: "pointer", marginBottom: "20px"}}  id="firstSlideSMButton">{data.learnMoreButton}</button>
               </Link>
             </div>
           </div>

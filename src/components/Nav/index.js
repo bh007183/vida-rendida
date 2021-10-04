@@ -90,7 +90,15 @@ const useStyles = makeStyles((theme) => ({
 
 export default function PersistentDrawerLeft() {
   const {state, dispatch} = useGlobalContext()
-  console.log(state)
+  let data;
+  const english = useGlobalContext().state.English
+  const spanish = useGlobalContext().state.Spanish
+  const bool = useGlobalContext().state.Bool
+  if(bool){
+    data = spanish
+  }else{
+    data = english
+  }
   const classes = useStyles();
   const theme = useTheme();
   const [open, setOpen] = React.useState(false);
@@ -125,7 +133,7 @@ export default function PersistentDrawerLeft() {
               
         <Typography id="logoText" variant="h4" noWrap>
         <Link to="/" style={{textDecoration: "none", color: "white"}}>
-            Vida Rendida
+            {data.logo}
             </Link>
           </Typography>
          
@@ -178,34 +186,41 @@ export default function PersistentDrawerLeft() {
         </div>
         <Divider />
         <List>
-        <Link className="link" to="/">
+        <Link onClick={handleDrawerClose} className="link" to="/">
             <ListItem button >
               <ListItemIcon> <HomeIcon className="icon" /></ListItemIcon>
               <ListItemText primary="Home" />
             </ListItem>
             </Link>
             <Divider />
-           <Link  className="link"to="/costa-rica-missions">
+           <Link  onClick={handleDrawerClose} className="link"to="/costa-rica-missions">
             <ListItem button >
               <ListItemIcon> <InfoIcon className="icon"/></ListItemIcon>
               <ListItemText primary="Who We Are" />
             </ListItem>
             </Link>
             <Divider />
-           <Link  className="link"to="/contact">
+           <Link onClick={handleDrawerClose}  className="link"to="/contact">
             <ListItem button >
               <ListItemIcon> <EmailIcon className="icon"/></ListItemIcon>
               <ListItemText primary="Contact Us" />
             </ListItem>
             </Link>
             <Divider />
-           <Link  className="link"to="/costa-rica-mission-trips">
+           <Link onClick={handleDrawerClose}  className="link"to="/costa-rica-mission-trips">
             <ListItem button >
               <ListItemIcon> <GroupWorkIcon className="icon"/></ListItemIcon>
               <ListItemText primary="Get Involved" />
             </ListItem>
             </Link>
             <Divider />
+            <ListItem style={{display: "flex", justifyContent: "center"}} >
+            🇺🇸
+              <Switch checked={state.Bool} onChange={handleChange}  />
+              🇨🇷
+            </ListItem>
+            <Divider />
+            
             
           
         </List>

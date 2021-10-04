@@ -26,6 +26,7 @@ function globalReducer(state, action){
 
 function GlobalProvider({children}){
     const [state, dispatch] = React.useReducer(globalReducer, {Bool: false, English: {
+        logo: "Surrendered Life",
         whatwedo: "What we do - Evangelism, Preach in churches, Encourage the church to boldly live for Christ, children’s ministry, youth ministry, pastoral/ leadership training, humanitarian, building projects, restoration of those in addictions, men’s & women’s ministry, worship music project, slums, homeless outreach, take bibles to those without the word and travel to share with indigenous groups. ",
         whoweare: "We are missionaries.  We are a family from the United States, from the State of Washington. Called out by the Lord in 2011, to go into the mission field, on a complete journey of faith. The Lord strengthened and prepared us, as He asked us to give up our home and sell all that we had to leave the U.S. and move to Costa Rica. We now serve traveling throughout all of Central America and have seen thousands of people impacted by the gospel of Jesus Christ! All glory to God as He continues to establish all for His purpose! It is our greatest desire to be a living sacrifice unto the Lord, and proclaim the gospel to all the world! BENEDICT FAMILY - Justin & Grifyn, Hailey, Adison, Chloey, Makensie, Landen, Levi, Jubilee, Kaeden & Olivia.",
         costaRicaHeader: "Costa Rica Missions",
@@ -49,9 +50,12 @@ function GlobalProvider({children}){
         evangelismText: "Street evangelism action sports outreach ministry.",
         indigenous: "Indigenous Ministry",
         indigenousText: "Sharing the love of Jesus to remote villages.",
+        other: "Other",
+        otherText: "We also participate in other forms of ministry including but not limited to, women’s or men’s ministry, rehabilitation of those in addictions (partnership with misión rescate CR) then discipleship and follow-up, slum outreach, pastoral training, and home visits.",
 
         vision: "Spreading the gospel of our Lord Jesus through out Costa Rica, our goal is to humbly serve as the Lord allows us each day. To come along side local churches and to go into the communities. To meet the greatest needs and ultimately to share the gospel of Jesus Christ! "
     }, Spanish: {
+        logo: "Vida Rendida",
         whatwedo: "Lo que hacemos: evangelización, predicar en iglesias, animar a la iglesia a vivir con valentía para Cristo, ministerio de niños, ministerio de jóvenes, capacitación pastoral / de liderazgo, proyectos humanitarios, de construcción, restauración de adicciones, ministerio de hombres y mujeres, proyecto de música de adoración, barrios marginales, alcance para personas sin hogar, llevar biblias a los que no tienen la palabra y viajar para compartir con grupos indígenas. ",
         whoweare: "Somos misioneros. Somos una familia de Estados Unidos, del estado de Washington. Llamado por el Señor en 2011, para ir al campo misionero, en un camino completo de fe. El Señor nos fortaleció y preparó, cuando nos pidió que renunciéramos a nuestra casa y vendiéramos todo lo que teníamos para dejar los Estados Unidos y mudarnos a Costa Rica. ¡Ahora servimos viajando por toda Centroamérica y hemos visto a miles de personas impactadas por el evangelio de Jesucristo! ¡Toda la gloria a Dios mientras continúa estableciendo todo para Su propósito! ¡Nuestro mayor deseo es ser un sacrificio vivo para el Señor y proclamar el evangelio a todo el mundo! FAMILIA BENEDICT: Justin y Grifyn, Hailey, Adison, Chloey, Makensie, Landen, Levi, Jubilee, Kaeden y Olivia.",
         costaRicaHeader: "Misiones Costa Rica",
@@ -75,6 +79,8 @@ function GlobalProvider({children}){
         evangelismText: "Evangelismo callejero ministerio de alcance de deportes de acción.",
         indigenous: "Ministerio Indígena",
         indigenousText: "Compartiendo el amor de Jesús a aldeas remotas.",
+        other: "Otro",
+        otherText: "También participamos en otras formas de ministerio que incluyen, entre otros, el ministerio de mujeres u hombres, rehabilitación de adictos (asociación con misión rescate CR) y luego discipulado y seguimiento, alcance en barrios marginales, capacitación pastoral y visitas domiciliarias.",
         vision: "Al difundir el evangelio de nuestro Señor Jesús por toda Costa Rica, nuestro objetivo es servir humildemente como el Señor nos permite cada día. Ir al lado de las iglesias locales e ir a las comunidades. ¡Para satisfacer las necesidades más grandes y, en última instancia, compartir el evangelio de Jesucristo!"
     }})
     const value = {state, dispatch}

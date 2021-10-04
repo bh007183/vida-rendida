@@ -34,6 +34,11 @@ export default function Contact() {
             <div className="linkContain">
             <a style={{color: "#C09F80"}} href="mailto:vidarendida@gmail.com">vidarendida@gmail.com</a>
             </div>
+             <h2 id="contactH2">Donate</h2>
+             <hr></hr>
+            <div className="linkContain">
+            <a style={{color: "#C09F80"}} href="https://christcentercashmere.churchcenter.com/giving/to/costa-rica-benedicts" target="_blank">Make a donation</a>
+            </div>
             
             </div>
             

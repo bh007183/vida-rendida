@@ -55,15 +55,6 @@ export default function Home() {
             </div>
           </div>
         </section>
-        <section id="ministriesGridContainer">
-          
-         
-          
-          
-
-          
-           
-        </section>
       </main>
     </div>
   );

@@ -21,6 +21,9 @@ body {
 a:hover{
   color: var(--Tan);
 }
+p{
+  font-size: 18px;
+}
 
 
 code {
