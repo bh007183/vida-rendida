@@ -31,7 +31,7 @@ h1 {
   padding-left: 20px;
   padding-right: 20px;
 }
-
+/*  */
 #ministriesGridContainer {
   display: grid;
   grid-template-columns: repeat(8, 1fr);
