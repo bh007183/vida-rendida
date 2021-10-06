@@ -34,7 +34,7 @@ export default function CarouselComponent() {
         </div>
         <div id="firstSlideContentContain">
           <div id="firstSlideButtonContain">
-          <Link name="Us" className="link"to="/costa-rica-missions">
+          <Link aria-label="Team" name="Us" className="link"to="/costa-rica-missions">
             <button style={{cursor: "pointer", marginBottom: "20px"}} className="firstSlideButton">{data.whoWeAre}</button>
             </Link>
           </div>
@@ -45,7 +45,7 @@ export default function CarouselComponent() {
               style={{ fontSize: "18px" }}
             >{data.vision}</p>
             <div style={{ display: "flex", justifyContent: "center" }}>
-            <Link name="Us" className="link"to="/costa-rica-missions">
+            <Link aria-label="Team" name="Us" className="link"to="/costa-rica-missions">
             <button style={{cursor: "pointer", marginBottom: "20px"}} className="firstSlideSMButton">{data.whoWeAre}</button>
             </Link>
             </div>
@@ -55,18 +55,18 @@ export default function CarouselComponent() {
       <div className="carousel-screens" id="secondSlide">
       <div id="firstSlideContentContain">
           <div id="firstSlideButtonContain">
-          <Link  name="Ministries" className="link"to="/costa-rica-mission-trips">
+          <Link  aria-label="Ministries" className="link"to="/costa-rica-mission-trips">
             <button style={{cursor: "pointer", marginBottom: "20px"}}  className="firstSlideButton">{data.whatWeDo}</button>
             </Link>
           </div>
 
           <div id="firstSlideText">
-            <h1>What We Do</h1>
+            <h1>{data.whatWeDo}</h1>
             <p
               style={{ fontSize: "18px" }}
             >{data.whatwedo}</p>
             <div style={{ display: "flex", justifyContent: "center" }}>
-            <Link  name="Ministries" className="link"to="/costa-rica-mission-trips">
+            <Link  aria-label="Ministries" className="link"to="/costa-rica-mission-trips">
               <button style={{cursor: "pointer", marginBottom: "20px"}}  className="firstSlideSMButton">{data.whatWeDo}</button>
               </Link>
             </div>
