@@ -40,19 +40,23 @@ function GlobalProvider({ children }) {
       humanitarian: "Humanitarian Aid",
       humanitarianText:
         "Clothing/groceries to those in great poverty. Visiting homes in low income communities or slums or on the streets.",
-      construction: "Construction projects",
-      constructionText: "building churches or repairing homes",
-      children: "Children’s ministries",
+      construction: "Construction Projects",
+      constructionText: "building churches or repairing homes.",
+      children: "Children’s Ministries",
       childrenText:
-        "Sunday school classes outreaches to children in communities using activities",
-      worship: "Worship ministry",
-      worshipText: "Worship and praise God together.",
+        "Sunday school classes or outreaches to children in communities using activities and music",
+      rehabilitation: "Rehabilitation Ministry",
+      rehabilitationText: "Rehabilitation of those in addictions (partnership with Misión Rescate CR) then discipleship and follow-up.",
       bible: "Bible Distribution",
       bibleText: "Bringing Bibles to communities without access to the word.",
       evangelism: "Action Sport and Street Evangelism",
-      evangelismText: "Street evangelism action sports outreach ministry.",
+      evangelismText: "Evangelism outreach using sports and music as a tool to reach out.",
       indigenous: "Indigenous Ministry",
       indigenousText: "Sharing the love of Jesus to remote villages.",
+      clothing: "Clothing Project",
+      clothingText: "To help small communities access clothing.",
+      worship: "Worship Project",
+      worshipText: "To help teach music and start worship teams for churches.",
       other: "Other",
       otherText:
         "We also participate in other forms of ministry including but not limited to, women’s or men’s ministry, rehabilitation of those in addictions (partnership with misión rescate CR) then discipleship and follow-up, slum outreach, pastoral training, and home visits.",
@@ -73,34 +77,29 @@ function GlobalProvider({ children }) {
       whatWeDo: "Que hacemos",
       whoWeAre: "Quienes somos",
       ourVision: "Nuestra visión",
-      getInvolved: "Get Involved",
-      getInvolvedText: `¡Hay un par de formas en las que puede participar! Si desea ayudar directamente en Costa Rica, damos la bienvenida a equipos locales o internacionales, envíenos un ${(
-        <a href="mailto:vidarendida@gmail.com">Correo electrónico</a>
-      )} y discutiremos oportunidades. ¡También puedes contribuir a través de la oración! ¡Agradecemos cualquier intercesión en nuestro nombre! Por último, pero no menos importante, puede hacer una contribución monetaria. ${(
-        <a
-          href="https://christcentercashmere.churchcenter.com/giving/to/costa-rica-benedicts"
-          target="_blank"
-        >
-          Aquí
-        </a>
-      )}`,
+      getInvolved: "Involucrarse",
+      getInvolvedText: false,
       humanitarian: "Ayuda humanitaria",
       humanitarianText:
         "Ropa / víveres para quienes se encuentran en situación de gran pobreza. Visitar hogares en comunidades de bajos ingresos o barrios marginales o en las calles.",
-      construction: "Proyectos de construcción",
-      constructionText: "construyendo iglesias o reparando casas",
+      construction: "Proyectos de Construcción",
+      constructionText: "Construyendo iglesias o reparando casas.",
       children: "Ministerios de niños",
       childrenText:
-        "Las clases de la escuela dominical alcanzan a los niños en las comunidades mediante actividades",
-      worship: "Ministerio de adoración",
-      worshipText: "Adora y alaba a Dios juntos.",
+        "Clases de escuela dominical o actividades de extensión para niños en comunidades utilizando actividades y música.",
+      rehabilitation: "Ministerio de rehabilitación",
+      rehabilitationText: "Rehabilitación de adictos (asociación con Misión Rescate CR) luego discipulado y seguimiento.",
       bible: "Distribución de la Biblia",
       bibleText: "Llevando Biblias a comunidades sin acceso a la palabra.",
       evangelism: "Deporte de acción y evangelización callejera",
       evangelismText:
-        "Evangelismo callejero ministerio de alcance de deportes de acción.",
+        "Alcance de evangelización usando deportes y música como una herramienta para llegar.",
       indigenous: "Ministerio Indígena",
       indigenousText: "Compartiendo el amor de Jesús a aldeas remotas.",
+      clothing: "Proyecto de ropa",
+      clothingText: "Ayudar a las pequeñas comunidades a acceder a la ropa.",
+      worship: "Proyecto de adoración",
+      worshipText: "Para ayudar a enseñar música y comenzar equipos de adoración para iglesias.",
       other: "Otro",
       otherText:
         "También participamos en otras formas de ministerio que incluyen, entre otros, el ministerio de mujeres u hombres, rehabilitación de adictos (asociación con misión rescate CR) y luego discipulado y seguimiento, alcance en barrios marginales, capacitación pastoral y visitas domiciliarias.",

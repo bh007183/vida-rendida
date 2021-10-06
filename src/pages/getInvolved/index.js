@@ -4,9 +4,11 @@ import HumanitarianPic from "../../images/costa-rica-carry.jpeg";
 import ConstructionPic from "../../images/costa-rica-serve.jpeg";
 import ChildrenProgramPic from "../../images/costa-rica-children-program.jpeg";
 import BiblePic from "../../images/costa-rica-bible-distribute.jpeg";
-import TrekPic from "../../images/costa-rica-trek.jpeg";
+import Indigenous from "../../images/costa-rica-indigenous.jpg";
+import RehabPic from "../../images/costa-rica-rehab.jpeg";
 import WorshipPic from "../../images/costa-rica-worship.jpeg";
 import ActionPic from "../../images/costa-rica-action-sport.jpeg";
+import Clothing from "../../images/costa-rica-clothing.jpeg";
 import Card from "@material-ui/core/Card";
 
 import CardContent from "@material-ui/core/CardContent";
@@ -34,23 +36,21 @@ export default function GetInvolved() {
         <div style={{ width: "80%" }}>
           
             {data.getInvolvedText ===true ? <p>There are a couple of ways you can get involved! If you want to help directly in Costa Rica, we welcome local or international teams, send us an 
-        <a href="mailto:vidarendida@gmail.com"> Email </a>
-       and we will discuss oportunities. You can also contribute through prayer! We apreciate any intercession on our behalf! Last but not least, you can make a monetary contribution 
+              {" "}<a href="mailto:vidarendida@gmail.com">Email</a>
+            {" "} and we will discuss oportunities. You can also contribute through prayer! We apreciate any intercession on our behalf! Last but not least, you can make a monetary contribution {" "}
         <a
           href="https://christcentercashmere.churchcenter.com/giving/to/costa-rica-benedicts"
           target="_blank"
-        >
-          Here 
-        </a>  </p>
+        > Here</a>.  </p>
        : <p>¡Hay un par de formas en las que puede participar! Si desea ayudar directamente en Costa Rica, damos la bienvenida a equipos locales o internacionales, envíenos un 
-        <a href="mailto:vidarendida@gmail.com"> Correo electrónico </a>
+        {" "}<a href="mailto:vidarendida@gmail.com">Correo electrónico</a>{" "}
       y discutiremos oportunidades. ¡También puedes contribuir a través de la oración! ¡Agradecemos cualquier intercesión en nuestro nombre! Por último, pero no menos importante, puede hacer una contribución monetaria 
-        <a
+      {" "} <a
           href="https://christcentercashmere.churchcenter.com/giving/to/costa-rica-benedicts"
           target="_blank"
         >
            Aquí 
-        </a> .
+        </a>.
         </p>
       }
           
@@ -107,13 +107,13 @@ export default function GetInvolved() {
         </Card>
 
         <Card>
-          <CardMedia component="img" image={WorshipPic} alt="Worship" />
+          <CardMedia component="img" image={RehabPic} alt="Worship" />
           <CardContent>
             <Typography gutterBottom variant="h5" component="div">
-              {data.worship}
+              {data.rehabilitation}
             </Typography>
             <Typography variant="body2" color="text.secondary">
-              {data.worshipText}
+              {data.rehabilitationText}
             </Typography>
           </CardContent>
         </Card>
@@ -148,13 +148,35 @@ export default function GetInvolved() {
           </CardContent>
         </Card>
         <Card>
-          <CardMedia component="img" image={TrekPic} alt="treking to village" />
+          <CardMedia component="img" image={Indigenous} alt="treking to village" />
           <CardContent>
             <Typography gutterBottom variant="h5" component="div">
               {data.indigenous}
             </Typography>
             <Typography variant="body2" color="text.secondary">
               {data.indigenousText}
+            </Typography>
+          </CardContent>
+        </Card>
+        <Card>
+          <CardMedia component="img" image={Clothing} alt="Clothing distribution" />
+          <CardContent>
+            <Typography gutterBottom variant="h5" component="div">
+              {data.clothing}
+            </Typography>
+            <Typography variant="body2" color="text.secondary">
+              {data.clothingText}
+            </Typography>
+          </CardContent>
+        </Card>
+        <Card>
+          <CardMedia component="img" image={WorshipPic} alt="Worshiping God" />
+          <CardContent>
+            <Typography gutterBottom variant="h5" component="div">
+              {data.worship}
+            </Typography>
+            <Typography variant="body2" color="text.secondary">
+              {data.worshipText}
             </Typography>
           </CardContent>
         </Card>
