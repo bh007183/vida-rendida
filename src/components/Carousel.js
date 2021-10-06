@@ -33,7 +33,7 @@ export default function CarouselComponent() {
         <div id="firstSlideContentContain">
           <div id="firstSlideButtonContain">
           <Link  className="link"to="/costa-rica-missions">
-            <button style={{cursor: "pointer", marginBottom: "20px"}} id="firstSlideButton">{data.learnMoreButton}</button>
+            <button style={{cursor: "pointer", marginBottom: "20px"}} id="firstSlideButton">{data.whoWeAre}</button>
             </Link>
           </div>
 
@@ -44,7 +44,7 @@ export default function CarouselComponent() {
             >{data.vision}</p>
             <div style={{ display: "flex", justifyContent: "center" }}>
             <Link  className="link"to="/costa-rica-missions">
-            <button style={{cursor: "pointer", marginBottom: "20px"}} id="firstSlideSMButton">{data.learnMoreButton}</button>
+            <button style={{cursor: "pointer", marginBottom: "20px"}} id="firstSlideSMButton">{data.whoWeAre}</button>
             </Link>
             </div>
           </div>
@@ -54,7 +54,7 @@ export default function CarouselComponent() {
       <div id="firstSlideContentContain">
           <div id="firstSlideButtonContain">
           <Link  className="link"to="/costa-rica-mission-trips">
-            <button style={{cursor: "pointer", marginBottom: "20px"}}  id="firstSlideButton">{data.learnMoreButton}</button>
+            <button style={{cursor: "pointer", marginBottom: "20px"}}  id="firstSlideButton">{data.whatWeDo}</button>
             </Link>
           </div>
 
@@ -65,7 +65,7 @@ export default function CarouselComponent() {
             >{data.whatwedo}</p>
             <div style={{ display: "flex", justifyContent: "center" }}>
             <Link  className="link"to="/costa-rica-mission-trips">
-              <button style={{cursor: "pointer", marginBottom: "20px"}}  id="firstSlideSMButton">{data.learnMoreButton}</button>
+              <button style={{cursor: "pointer", marginBottom: "20px"}}  id="firstSlideSMButton">{data.whatWeDo}</button>
               </Link>
             </div>
           </div>

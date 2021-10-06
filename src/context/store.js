@@ -63,6 +63,12 @@ function GlobalProvider({ children }) {
 
       vision:
         "Spreading the gospel of our Lord Jesus through out Costa Rica, our goal is to humbly serve as the Lord allows us each day. To come along side local churches and to go into the communities. To meet the greatest needs and ultimately to share the gospel of Jesus Christ! ",
+
+      contact: "Contact Us",
+      contactText: "Questions? Need to get in touch? Send us an email!",
+      email: "Email",
+      donate: "Donate",
+      donateText: "Make a dontaion"
     },
     Spanish: {
       logo: "Vida Rendida",
@@ -105,6 +111,11 @@ function GlobalProvider({ children }) {
         "También participamos en otras formas de ministerio que incluyen, entre otros, el ministerio de mujeres u hombres, rehabilitación de adictos (asociación con misión rescate CR) y luego discipulado y seguimiento, alcance en barrios marginales, capacitación pastoral y visitas domiciliarias.",
       vision:
         "Al difundir el evangelio de nuestro Señor Jesús por toda Costa Rica, nuestro objetivo es servir humildemente como el Señor nos permite cada día. Ir al lado de las iglesias locales e ir a las comunidades. ¡Para satisfacer las necesidades más grandes y, en última instancia, compartir el evangelio de Jesucristo!",
+      contact: "Contacta con nosotros",
+      contactText: "¿Preguntas? ¿Necesita ponerse en contacto? ¡Envianos un email!",
+      email: "Correo electrónico",
+      donate: "Donar",
+      donateText: "Haz una donación"
     },
   });
   const value = { state, dispatch };

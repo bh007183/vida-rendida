@@ -18,13 +18,13 @@ export default function Contact() {
 
             
             
-             <h1 id="contactH1">Contact Us</h1>
+             <h1 id="contactH1">{data.contact}</h1>
              <hr></hr>
              <p id="contactPara">
-                Questions? Need to get in touch? Send us an email!
+                {data.contactText}
 
              </p>
-             <h2 id="contactH2">Email</h2>
+             <h2 id="contactH2">{data.email}</h2>
              <hr></hr>
              
                
@@ -34,10 +34,10 @@ export default function Contact() {
             <div className="linkContain">
             <a style={{color: "#C09F80"}} href="mailto:vidarendida@gmail.com">vidarendida@gmail.com</a>
             </div>
-             <h2 id="contactH2">Donate</h2>
+             <h2 id="contactH2">{data.donate}</h2>
              <hr></hr>
             <div className="linkContain">
-            <a style={{color: "#C09F80"}} href="https://christcentercashmere.churchcenter.com/giving/to/costa-rica-benedicts" target="_blank">Make a donation</a>
+            <a style={{color: "#C09F80"}} href="https://christcentercashmere.churchcenter.com/giving/to/costa-rica-benedicts" target="_blank">{data.donateText}</a>
             </div>
             
             </div>
