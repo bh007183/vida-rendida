@@ -116,6 +116,18 @@ export default function GetInvolved() {
           </CardContent>
         </Card>
         <Card>
+          <CardMedia component="img" image={RehabPic} alt="Rehabilitation Missions In Central America" />
+          <CardContent>
+            <Typography gutterBottom variant="h5" component="div">
+              {data.rehabilitation}
+            </Typography>
+            <Typography variant="body2" color="text.secondary">
+              {data.rehabilitationText}
+            </Typography>
+          </CardContent>
+        </Card>
+        <Card>
+          
           <CardMedia
             component="img"
             image={ChildrenProgramPic}
@@ -130,17 +142,7 @@ export default function GetInvolved() {
             </Typography>
           </CardContent>
         </Card>
-        <Card>
-          <CardMedia component="img" image={RehabPic} alt="Rehabilitation Missions In Central America" />
-          <CardContent>
-            <Typography gutterBottom variant="h5" component="div">
-              {data.rehabilitation}
-            </Typography>
-            <Typography variant="body2" color="text.secondary">
-              {data.rehabilitationText}
-            </Typography>
-          </CardContent>
-        </Card>
+        
         <Card>
           <CardMedia
             component="img"
