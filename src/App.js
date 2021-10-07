@@ -24,7 +24,7 @@ function App() {
           <GetInvolved />
            
           </Route>
-          <Route exact path="/costa-rica-missions">
+          <Route exact path="/who-we-are">
             <WhoWeAre />
           </Route>
           <Route exact path="/contact">

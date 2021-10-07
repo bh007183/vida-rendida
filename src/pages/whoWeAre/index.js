@@ -18,6 +18,15 @@ export default function WhoWeAre() {
 
   return (
     <div id="whoWeAreContain">
+      <Helmet>
+          <meta charSet="utf-8" />
+          <meta
+      name="description"
+      content="Who We Are"
+    />
+                <title>About Us</title>
+                <link rel="canonical" href="https://surrenderedlife.org/who-we-are" />
+          </Helmet>
       <div id="whoWeAreHeader">
        
         <img id="famPic" style={{display: "block"}}></img>

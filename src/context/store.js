@@ -28,7 +28,7 @@ function GlobalProvider({ children }) {
       whoweare:
         "We are missionaries.  We are a family from the United States, from the State of Washington. Called out by the Lord in 2011, to go into the mission field, on a complete journey of faith. The Lord strengthened and prepared us, as He asked us to give up our home and sell all that we had to leave the U.S. and move to Costa Rica. We now serve traveling throughout all of Central America and have seen thousands of people impacted by the gospel of Jesus Christ! All glory to God as He continues to establish all for His purpose! It is our greatest desire to be a living sacrifice unto the Lord, and proclaim the gospel to all the world! BENEDICT FAMILY - Justin & Grifyn, Hailey, Adison, Chloey, Makensie, Landen, Levi, Jubilee, Kaeden & Olivia.",
       costaRicaHeader: "Costa Rica Missions",
-      costaRicaOutreach: "Costa Rica Outreach",
+      costaRicaOutreach: "Mission Trip Opportunities",
       firstSlideHeader: "Surrendered Life Ministries",
       learnMoreButton: "Learn More",
       whatWeDo: "What We Do",
@@ -77,7 +77,7 @@ function GlobalProvider({ children }) {
       whoweare:
         "Somos misioneros. Somos una familia de Estados Unidos, del estado de Washington. Llamado por el Señor en 2011, para ir al campo misionero, en un camino completo de fe. El Señor nos fortaleció y preparó, cuando nos pidió que renunciéramos a nuestra casa y vendiéramos todo lo que teníamos para dejar los Estados Unidos y mudarnos a Costa Rica. ¡Ahora servimos viajando por toda Centroamérica y hemos visto a miles de personas impactadas por el evangelio de Jesucristo! ¡Toda la gloria a Dios mientras continúa estableciendo todo para Su propósito! ¡Nuestro mayor deseo es ser un sacrificio vivo para el Señor y proclamar el evangelio a todo el mundo! FAMILIA BENEDICT: Justin y Grifyn, Hailey, Adison, Chloey, Makensie, Landen, Levi, Jubilee, Kaeden y Olivia.",
       costaRicaHeader: "Misiones Costa Rica",
-      costaRicaOutreach: "Alcance de Costa Rica",
+      costaRicaOutreach: "Oportunidades de viaje misionero",
       firstSlideHeader: "Ministerios de vida rendida",
       learnMoreButton: "Aprende más",
       whatWeDo: "Que hacemos",

@@ -121,13 +121,9 @@ export default function PersistentDrawerLeft() {
 
   return (
     // <Container maxWidth="sm">
-    <div className={classes.root}>
+    <header className={classes.root}>
       <CssBaseline />
       <AppBar
-        // position="fixed"
-        // className={clsx(classes.appBar, {
-        //   [classes.appBarShift]: open,
-        // })}
       >
         <Toolbar>
             <div id="logoContain">
@@ -141,7 +137,7 @@ export default function PersistentDrawerLeft() {
           </div>
           <div id="navLinksContain">
           <Hidden smDown  >
-              <Link to="/costa-rica-missions"className="navLinks">Who We Are</Link>
+              <Link to="/who-we-are"className="navLinks">Who We Are</Link>
               <Link to="/costa-rica-mission-trips"className="navLinks">Get Involved</Link>
               <Link to="/contact"className="navLinks">Contact</Link>
 
@@ -194,7 +190,7 @@ export default function PersistentDrawerLeft() {
             </ListItem>
             </Link>
             <Divider />
-           <Link  name="whoWeAre" onClick={handleDrawerClose} className="link"to="/costa-rica-missions">
+           <Link  name="whoWeAre" onClick={handleDrawerClose} className="link"to="/who-we-are">
             <ListItem button >
               <ListItemIcon> <InfoIcon className="icon"/></ListItemIcon>
               <ListItemText primary="Who We Are" />
@@ -227,7 +223,7 @@ export default function PersistentDrawerLeft() {
         </List>
         
       </Drawer>
-    </div>
+    </header>
     // </Container>
   );
 }

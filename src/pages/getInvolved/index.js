@@ -29,6 +29,15 @@ export default function GetInvolved() {
   }
   return (
     <div id="getInvolvedContain">
+      <Helmet>
+          <meta charSet="utf-8" />
+          <meta
+      name="description"
+      content="Mission Opportunities in Central America"
+    />
+                <title>Mission Trips Central America</title>
+                <link rel="canonical" href="https://surrenderedlife.org/costa-rica-mission-trips" />
+          </Helmet>
       <h1 style={{ textAlign: "center", margin: "0px", padding: "20px" }}>
         {data.getInvolved}
       </h1>
@@ -37,7 +46,7 @@ export default function GetInvolved() {
           
             {data.getInvolvedText ===true ? <p>There are a couple of ways you can get involved! If you want to help directly in Costa Rica, we welcome local or international teams, send us an 
               {" "}<a href="mailto:vidarendida@gmail.com">Email</a>
-            {" "} and we will discuss oportunities. You can also contribute through prayer! We apreciate any intercession on our behalf! Last but not least, you can make a monetary contribution {" "}
+            {" "} and we will discuss opportunities. You can also contribute through prayer! We apreciate any intercession on our behalf! Last but not least, you can make a monetary contribution {" "}
         <a
           href="https://christcentercashmere.churchcenter.com/giving/to/costa-rica-benedicts"
           target="_blank"
@@ -64,7 +73,7 @@ export default function GetInvolved() {
           <CardMedia
             component="img"
             image={HumanitarianPic}
-            alt="humanitarian aid in costa rica"
+            alt="Humanitarian Missions In Central America and Costa Rica"
           />
           <CardContent>
             <Typography gutterBottom variant="h5" component="div">
@@ -79,7 +88,7 @@ export default function GetInvolved() {
           <CardMedia
             component="img"
             image={ConstructionPic}
-            alt="building churches costa rica"
+            alt="Building Churches In Costa Rica"
           />
           <CardContent>
             <Typography gutterBottom variant="h5" component="div">
@@ -90,38 +99,12 @@ export default function GetInvolved() {
             </Typography>
           </CardContent>
         </Card>
-        <Card>
-          <CardMedia
-            component="img"
-            image={ChildrenProgramPic}
-            alt="Childrens ministry"
-          />
-          <CardContent>
-            <Typography gutterBottom variant="h5" component="div">
-              {data.children}
-            </Typography>
-            <Typography variant="body2" color="text.secondary">
-              {data.childrenText}
-            </Typography>
-          </CardContent>
-        </Card>
 
-        <Card>
-          <CardMedia component="img" image={RehabPic} alt="Worship" />
-          <CardContent>
-            <Typography gutterBottom variant="h5" component="div">
-              {data.rehabilitation}
-            </Typography>
-            <Typography variant="body2" color="text.secondary">
-              {data.rehabilitationText}
-            </Typography>
-          </CardContent>
-        </Card>
         <Card>
           <CardMedia
             component="img"
             image={BiblePic}
-            alt="Distributing bibles costa rica"
+            alt="Distributing Bibles In Costa Rica"
           />
           <CardContent>
             <Typography gutterBottom variant="h5" component="div">
@@ -135,8 +118,34 @@ export default function GetInvolved() {
         <Card>
           <CardMedia
             component="img"
+            image={ChildrenProgramPic}
+            alt="Teaching Children About Jesus In Costa Rica"
+          />
+          <CardContent>
+            <Typography gutterBottom variant="h5" component="div">
+              {data.children}
+            </Typography>
+            <Typography variant="body2" color="text.secondary">
+              {data.childrenText}
+            </Typography>
+          </CardContent>
+        </Card>
+        <Card>
+          <CardMedia component="img" image={RehabPic} alt="Rehabilitation Missions In Central America" />
+          <CardContent>
+            <Typography gutterBottom variant="h5" component="div">
+              {data.rehabilitation}
+            </Typography>
+            <Typography variant="body2" color="text.secondary">
+              {data.rehabilitationText}
+            </Typography>
+          </CardContent>
+        </Card>
+        <Card>
+          <CardMedia
+            component="img"
             image={ActionPic}
-            alt="action sport ministry"
+            alt="Evangelizing Through Action Sports Central America"
           />
           <CardContent>
             <Typography gutterBottom variant="h5" component="div">
@@ -148,7 +157,7 @@ export default function GetInvolved() {
           </CardContent>
         </Card>
         <Card>
-          <CardMedia component="img" image={Indigenous} alt="treking to village" />
+          <CardMedia component="img" image={Indigenous} alt="Mission Trip To Central America Indigenous" />
           <CardContent>
             <Typography gutterBottom variant="h5" component="div">
               {data.indigenous}
@@ -159,7 +168,7 @@ export default function GetInvolved() {
           </CardContent>
         </Card>
         <Card>
-          <CardMedia component="img" image={Clothing} alt="Clothing distribution" />
+          <CardMedia component="img" image={Clothing} alt="Distributing Afordable Clothing" />
           <CardContent>
             <Typography gutterBottom variant="h5" component="div">
               {data.clothing}
@@ -170,7 +179,7 @@ export default function GetInvolved() {
           </CardContent>
         </Card>
         <Card>
-          <CardMedia component="img" image={WorshipPic} alt="Worshiping God" />
+          <CardMedia component="img" image={WorshipPic} alt="Worshiping God In Central America" />
           <CardContent>
             <Typography gutterBottom variant="h5" component="div">
               {data.worship}

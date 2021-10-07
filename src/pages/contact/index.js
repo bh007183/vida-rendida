@@ -2,6 +2,7 @@ import React from 'react'
 import "./style.css"
 import EmailIcon from '@material-ui/icons/Email';
 import {useGlobalContext} from "../../context/store"
+import {Helmet} from "react-helmet"
 export default function Contact() {
     let data;
     const english = useGlobalContext().state.English
@@ -13,7 +14,12 @@ export default function Contact() {
       data = english
     }
     return (
-        <div id="contactContain">
+        <section id="contactContain">
+          <Helmet>
+          <meta charSet="utf-8" />
+                <title>Contact Page</title>
+                <link rel="canonical" href="https://surrenderedlife.org/contact" />
+          </Helmet>
             <div id="contactBox">
 
             
@@ -43,6 +49,6 @@ export default function Contact() {
             </div>
             
             
-        </div>
+        </section>
     )
 }
