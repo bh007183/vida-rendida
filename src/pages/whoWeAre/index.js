@@ -2,7 +2,7 @@ import React from "react";
 import "./style.css";
 import centralAmerica from "../../images/Central.jpeg"
 import costaRica from "../../images/NICARAGUA.jpeg"
-
+import {Helmet} from "react-helmet"
 import { GlobalProvider, useGlobalContext } from "../../context/store";
 
 export default function WhoWeAre() {

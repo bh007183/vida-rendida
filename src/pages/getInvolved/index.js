@@ -10,7 +10,7 @@ import WorshipPic from "../../images/costa-rica-worship.jpeg";
 import ActionPic from "../../images/costa-rica-action-sport.jpeg";
 import Clothing from "../../images/costa-rica-clothing.jpeg";
 import Card from "@material-ui/core/Card";
-
+import {Helmet} from "react-helmet"
 import CardContent from "@material-ui/core/CardContent";
 import CardMedia from "@material-ui/core/CardMedia";
 import { useGlobalContext } from "../../context/store";
