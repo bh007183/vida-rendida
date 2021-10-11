@@ -1,7 +1,7 @@
 import logo from "./logo.svg";
 import "./App.css";
 import Home from "./pages/home";
-import { BrowserRouter as Router, Switch, Route, Link, HashRouter } from "react-router-dom";
+import { HashRouter as Router, Switch, Route, Link } from "react-router-dom";
 import Contact from "./pages/contact";
 import WhoWeAre from "./pages/whoWeAre";
 import GetInvolved from "./pages/getInvolved";
@@ -14,7 +14,6 @@ function App() {
   return (
    
     <Router>
-     <HashRouter basename= "/">
       <GlobalProvider>
         <Container maxWidth="lg">
       <Nav/>
@@ -31,12 +30,10 @@ function App() {
           </Route>
           <Route exact path="/contact">
           <Contact />
-            
           </Route>
         </Switch>
         </Container>
       </GlobalProvider>
-    </HashRouter>
     </Router>
   );
 }
