@@ -1,7 +1,7 @@
 import logo from "./logo.svg";
 import "./App.css";
 import Home from "./pages/home";
-import { HashRouter as Router, Switch, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import Contact from "./pages/contact";
 import WhoWeAre from "./pages/whoWeAre";
 import GetInvolved from "./pages/getInvolved";
