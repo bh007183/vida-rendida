@@ -49,7 +49,7 @@ export default function Home() {
               </p>
             </div>
             <div className="centerContainer">
-              <Link aria-label="Team" name="Us" to="/costa-rica-missions">
+              <Link aria-label="Team" name="Us" to="/who-we-are">
               <button style={{cursor: "pointer"}}className="wwButton">{data.whoWeAre}</button>
               </Link>
             </div>
