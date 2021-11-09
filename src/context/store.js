@@ -27,7 +27,7 @@ function GlobalProvider({ children }) {
         "What we do - Evangelism, Preach in churches, Encourage the church to boldly live for Christ, children’s ministry, youth ministry, pastoral/ leadership training, humanitarian, building projects, restoration of those in addictions, men’s & women’s ministry, worship music project, slums, homeless outreach, take bibles to those without the word and travel to share with indigenous groups. ",
       whoweare:
         "We are missionaries.  We are a family from the United States, from the State of Washington. Called out by the Lord in 2011, to go into the mission field, on a complete journey of faith. The Lord strengthened and prepared us, as He asked us to give up our home and sell all that we had to leave the U.S. and move to Costa Rica. We now serve traveling throughout all of Central America and have seen thousands of people impacted by the gospel of Jesus Christ! All glory to God as He continues to establish all for His purpose! It is our greatest desire to be a living sacrifice unto the Lord, and proclaim the gospel to all the world! BENEDICT FAMILY - Justin & Grifyn, Hailey, Adison, Chloey, Makensie, Landen, Levi, Jubilee, Kaeden & Olivia.",
-      costaRicaHeader: "Costa Rica Missions",
+      costaRicaHeader: "Missions in Latin America",
       costaRicaOutreach: "Mission Trip Opportunities",
       firstSlideHeader: "Surrendered Life Ministries",
       learnMoreButton: "Learn More",
@@ -49,8 +49,8 @@ function GlobalProvider({ children }) {
       rehabilitationText: "Rehabilitation of those in addictions (partnership with Misión Rescate CR) then discipleship and follow-up.",
       bible: "Bible Distribution",
       bibleText: "Bringing Bibles to communities without access to the word.",
-      evangelism: "Action Sport and Street Evangelism",
-      evangelismText: "Evangelism outreach using sports and music as a tool to reach out.",
+      evangelism: "Action Sports and Street Evangelism",
+      evangelismText: "Evangelism outreach using sports and music as a tool to reach out. Partnering with ASO (Action sports outreach) and Missionary Camilo Rodriguez.",
       indigenous: "Indigenous Ministry",
       indigenousText: "Sharing the love of Jesus to remote villages.",
       clothing: "Clothing Project",
@@ -62,7 +62,7 @@ function GlobalProvider({ children }) {
         "We also participate in other forms of ministry including but not limited to, women’s or men’s ministry, rehabilitation of those in addictions (partnership with misión rescate CR) then discipleship and follow-up, slum outreach, pastoral training, and home visits.",
 
       vision:
-        "Spreading the gospel of our Lord Jesus through out Costa Rica, our goal is to humbly serve as the Lord allows us each day. To come along side local churches and to go into the communities. To meet the greatest needs and ultimately to share the gospel of Jesus Christ! ",
+        "Spreading the gospel through out Costa Rica and Latin America. Our goal is to humbly serve as the Lord allows us each day. To come along side local churches and to go into the communities. To meet the greatest needs and ultimately to share the gospel of Jesus Christ! ",
 
       contact: "Contact Us",
       contactText: "Questions? Need to get in touch? Send us an email!",

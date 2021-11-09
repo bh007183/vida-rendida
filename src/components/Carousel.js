@@ -34,7 +34,7 @@ export default function CarouselComponent() {
         </div>
         <div id="firstSlideContentContain">
           <div id="firstSlideButtonContain">
-          <Link aria-label="Team" name="Us" className="link"to="/costa-rica-missions">
+          <Link aria-label="Team" name="Us" className="link"to="/who-we-are">
             <button style={{cursor: "pointer", marginBottom: "20px"}} className="firstSlideButton">{data.whoWeAre}</button>
             </Link>
           </div>
@@ -45,7 +45,7 @@ export default function CarouselComponent() {
               style={{ fontSize: "18px" }}
             >{data.vision}</p>
             <div style={{ display: "flex", justifyContent: "center" }}>
-            <Link aria-label="Team" name="Us" className="link"to="/costa-rica-missions">
+            <Link aria-label="Team" name="Us" className="link"to="/who-we-are">
             <button style={{cursor: "pointer", marginBottom: "20px"}} className="firstSlideSMButton">{data.whoWeAre}</button>
             </Link>
             </div>

@@ -46,11 +46,11 @@ export default function GetInvolved() {
           
             {data.getInvolvedText ===true ? <p>There are a couple of ways you can get involved! If you want to help directly in Costa Rica, we welcome local or international teams, send us an 
               {" "}<a href="mailto:vidarendida@gmail.com">Email</a>
-            {" "} and we will discuss opportunities. You can also contribute through prayer! We apreciate any intercession on our behalf! Last but not least, you can make a monetary contribution {" "}
+            {" "} and we will discuss opportunities. You can also contribute through prayer! We apreciate any intercession on our behalf! If the Lord has placed it on your heart to give, click {" "}
         <a
           href="https://christcentercashmere.churchcenter.com/giving/to/costa-rica-benedicts"
           target="_blank"
-        > Here</a>.  </p>
+        > here</a> to give a tax deductible donation.  </p>
        : <p>¡Hay un par de formas en las que puede participar! Si desea ayudar directamente en Costa Rica, damos la bienvenida a equipos locales o internacionales, envíenos un 
         {" "}<a href="mailto:vidarendida@gmail.com">Correo electrónico</a>{" "}
       y discutiremos oportunidades. ¡También puedes contribuir a través de la oración! ¡Agradecemos cualquier intercesión en nuestro nombre! Por último, pero no menos importante, puede hacer una contribución monetaria 
