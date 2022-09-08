@@ -43,7 +43,7 @@ export default function Contact() {
              <h2 id="contactH2">{data.donate}</h2>
              <hr></hr>
             <div className="linkContain">
-            <a style={{color: "#C09F80"}} href="https://christcentercashmere.churchcenter.com/giving/to/costa-rica-benedicts" target="_blank">{data.donateText}</a>
+            <a style={{color: "#C09F80"}} href="https://pushpay.com/g/christcentercashmere" target="_blank">{data.donateText}</a>
             </div>
             
             </div>
