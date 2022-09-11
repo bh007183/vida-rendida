@@ -25,6 +25,7 @@ import {Link} from "react-router-dom";
 import Switch from "@material-ui/core/Switch"
 import {useGlobalContext} from "../../context/store"
 import Container from '@material-ui/core/Container';
+import PaidIcon from '@mui/icons-material/Paid';
 import "./style.css"
 
 const drawerWidth = 240;
@@ -140,7 +141,7 @@ export default function PersistentDrawerLeft() {
               <Link to="/who-we-are"className="navLinks">Who We Are</Link>
               <Link to="/costa-rica-mission-trips"className="navLinks">Get Involved</Link>
               <Link to="/contact"className="navLinks">Contact</Link>
-
+              <a target="_blank" href="https://pushpay.com/g/christcentercashmere"className="navLinks">Donate</a>
               🇺🇸
               <Switch {...label} checked={state.Bool} onChange={handleChange}  />
               🇨🇷
@@ -211,6 +212,14 @@ export default function PersistentDrawerLeft() {
             </ListItem>
             </Link>
             <Divider />
+            <a name="whatWeDo" target="_blank" className="link" href="https://pushpay.com/g/christcentercashmere">
+            <ListItem button >
+              <ListItemIcon> <PaidIcon className="icon"/></ListItemIcon>
+              <ListItemText primary="Donate" />
+            </ListItem>
+            </a>
+            <Divider />
+            
             <ListItem style={{display: "flex", justifyContent: "center"}} >
             🇺🇸
               <Switch {...label} checked={state.Bool} onChange={handleChange}  />
